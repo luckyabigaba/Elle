@@ -37,8 +37,12 @@ console.log (sumOfNumbers)
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+function countEvenNumbers(array) {
+    let sum = 0;
+    for (let i = 1; i < array.length; i+=2) {
+        sum += array[i];
+    }
+   console.log(sum);
 }
 console.log (countEvenNumbers)
 // assignment.countEvenNumbers = countEvenNumbers;
